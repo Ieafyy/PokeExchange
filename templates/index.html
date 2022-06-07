@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>PokeCambio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/originals/af/63/51/af6351ef52318522734ea2955666a7f0.jpg");
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: multiply;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="text-center bg-white h-20 mx-10 pt-5 text-3xl font-bold">POKE-TRADE</p>
+    </header>
+
+    <div class="grid grid-cols-3 gap-5 place-items-center bg-white w-12/12 mx-10">
+    {{ p1 | safe }}
+    {{ p2 | safe }}
+    {{ p3 | safe }}
+
+    {{ p4 | safe }}
+    {{ p5 | safe }}
+    {{ p6 | safe }}
+
+    {{ p7 | safe }}
+    {{ p8 | safe }}
+    {{ p9 | safe }}
+    </div>
+
+    <footer class="py-10 mx-10 bg-white">
+        <p class="text-3xl text-center font-bold mb-5 mx-5">Sobre o projeto</p>
+        <p class="mx-5">Olá! Seja bem vindo ao poketrade! Um projeto desenvolvido por mim para treinar os meus conhecimentos 
+            trabalhando com APIs. O sistema foi escrito em Python e seu backend no framework Flask. As APIs usadas
+            foram: <a href="https://pokeapi.co/" class="text-blue-500">PokeApi</a> e <a class="text-blue-500" href="https://docs.awesomeapi.com.br/api-de-moedas">Awesome Api</a>.
+            A ideia do projeto é pegar os 3 primeiros digitos (diferentes de 0) da taxa de câmbio das principais moedas com o Real 
+            e apartir desse número gerado, obter o Pokemon com ID correspondente. Se gostou, dê uma olhada em meu <a class="text-blue-500" href="https://github.com/Ieafyy">Github</a>!
+        </p>
+    </footer>
+</body>
+</html>
